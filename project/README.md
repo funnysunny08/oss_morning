@@ -10,17 +10,22 @@
 1. 우선 사용자의 개인 정보를 입력합니다. 이때 구와 동은 사용자의 주요 출몰 지역으로 설정하였습니다. 이러한 개인 정보를 바탕으로 사용자가 원하는 정보들을 추출합니다.
 
 ![](https://images.velog.io/images/funnysunny08/post/3f1e4a6b-e9d4-4faf-99f2-f7bc7a9afb24/info.png)
+
 2. 날씨 정보를 추출하는 것은 네이버 날씨 화면을 selector 이용하여 크롤링하였습니다.
 
 ![](https://images.velog.io/images/funnysunny08/post/2d3bea12-9092-446b-9bfa-5c13d28477b0/weather.png)
+
 3. 미세 먼지 정보는 서울시에서 제공하는 대기질 관련 open api를 활용하였습니다. PM 70 이상이면 미세 먼지가 심하다고 판단하여 마스크 착용을 권하도록 하였습니다.
 
 ![](https://images.velog.io/images/funnysunny08/post/87dc177d-8672-4240-a45a-7c9c35595838/misae.png)
+
 4. 식사 메뉴는 네이버에서 제공하는 오픈 API를 활용하여 사용자의 기호에 맞는 식당을 추천하도록 하였습니다. (client_id와 secret은 깃허브에는 지워서 올렸습니다😃)
 
 ![](https://images.velog.io/images/funnysunny08/post/baceefef-35b7-42b3-b589-b2fa41aafec0/matjip.png)
+
 5. 주식 정보를 예측하는 것은 LSTM이라는 인공지능 모델을 이용하여 예측하도록 하였습니다. 그리고 png 파일로 저장하여 사용자에게 같이 첨부하도록 하였습니다.
 (이 부분은 각종 자료와 유튜브를 보며 공부하며 클론 코딩하였습니다. [참조 유튜브링크](https://www.youtube.com/watch?v=sG_WeGbZ9A4))
+
 6. 마지막으로 메일 보내는 부분입니다. 앞에서 구한 정보들을 활용하여 사용자에게 메일을 보냅니다. 
 
 
